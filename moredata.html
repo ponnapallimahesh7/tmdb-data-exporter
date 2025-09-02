@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Get More TMDB Data</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_left_alt"
+    />
+  </head>
+  <body class="bg-gray-100 min-h-screen flex items-center justify-center">
+    <div class="w-full max-w-3xl rounded-2xl shadow p-8 text-center">
+      <h1 class="text-3xl font-bold text-gray-600 mb-4">
+        Get Full TMDB Dataset Data
+      </h1>
+      <p class="text-gray-600 mb-6">
+        The default export only contains
+        <span class="font-semibold">60 movies</span>. If you want the full
+        dataset (~9401 movies with <em>name, description, genre</em>), you have
+        two options:
+      </p>
+
+      <!-- Option 1 -->
+      <div class="text-left mb-6">
+        <h2 class="text-xl font-semibold text-gray-600 mb-2">
+           Option 1: Run the Code
+        </h2>
+        <p class="text-gray-600 mb-2">
+          Clone my GitHub repository and update this line in
+          <code class="bg-gray-200 px-2 py-1 rounded">script.js</code>:
+        </p>
+        <pre
+          class="bg-gray-100 text-sm p-4 rounded-lg text-left overflow-x-auto border"
+        >
+const totalPages = 3; 
+// Change to 470 if you want all (not recommended)
+      </pre
+        >
+        <a
+          href="https://github.com/ponnapallimahesh7/tmdb-data-exporter"
+          target="_blank"
+          class="inline-block mt-3 px-4 py-2 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-900"
+        >
+          🔗 View GitHub Repository
+        </a>
+      </div>
+
+      <!-- Option 2 -->
+      <div class="text-left mb-6">
+        <h2 class="text-xl font-semibold text-gray-600 mb-2">
+          Option 2: Download CSV
+        </h2>
+        <p class="text-gray-600">
+          I have already Generated a csv containing 9401 movies data, Directly
+          download the full dataset (~9401 movies) as a CSV file:
+        </p>
+       <a href="/public/tmdb9401movies.csv" download
+   class="inline-block mt-3 px-4 py-2 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-900">
+   ⬇️ Download Full CSV
+</a>
+
+      </div>
+
+      <!-- API Links -->
+      <div class="text-left">
+        <h2 class="text-xl font-semibold text-gray-600 mb-2">
+           TMDB API JSON Links
+        </h2>
+        <p class="text-gray-600 mb-2">
+          You can also explore TMDB data directly:
+        </p>
+        <ul class="list-disc list-inside text-blue-600">
+          <li>
+            <a
+              href="https://api.themoviedb.org/3/genre/movie/list?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US"
+              target="_blank"
+              class="hover:underline"
+            >
+              🎭 Genres JSON
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://api.themoviedb.org/3/movie/top_rated?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US&page=1"
+              target="_blank"
+              class="hover:underline"
+            >
+              🎬 Top Rated Movies JSON (Page 1)
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Back button -->
+      <div class="mt-8">
+        <a
+          href="index.html"
+          class="inline-block px-4 py-2 bg-gray-600 text-white rounded-lg shadow hover:bg-gray-800"
+        >
+          ⬅️ Back to Main Page
+        </a>
+      </div>
+    </div>
+  </body>
+</html>
